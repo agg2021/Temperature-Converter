@@ -1,0 +1,22 @@
+//Esto es un programa que convierte la cantidad de Fahrenheit que introduce el usuario a otras unidad (Grados Celsius)
+#include <stdio.h>
+
+int main()
+{
+
+   //Creamos las variables que almacenan tanto valores Fahrenheit como GradosCelsius como floats
+   float Fahrenheit, GradosCelsius;
+   
+   printf("Introduce el numero de Fahrenheit: ");
+
+  //Adjudicamos el numero de Farenheit introducido por el usuario a la variable Fahrenheit
+   scanf("%f", &Fahrenheit);
+   
+
+   //Convertimos el valor los Fahrenheit a la unidad de los Grados Celsius
+   GradosCelsius = (Fahrenheit - 32.0) * 5.0 / 9.0;
+   
+   printf("El numero de Fahrenheit introducidos es equivalente a: %.2f GradosCelsius", GradosCelsius);
+    return 0;
+
+}
