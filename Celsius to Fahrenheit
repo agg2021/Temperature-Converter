@@ -1,21 +1,21 @@
-//Esto es un programa que convierte la cantidad de Grados Celsius que introduce el usuario a otras unidad (Fahrenheit)
+// This is a program that converts the number of Celsius degrees entered by the user into another unit (Fahrenheit)
 #include <stdio.h>
 
 int main()
 {
 
-  //Creamos las variables para almacenar tanto valores con la unidades Grados Celsius y Fahrenheit como floats 
-   float GradosCelsius, Fahrenheit;
+  // We create variables to store values for both Celsius and Fahrenheit units as floats
+   float CelsiusDegrees, Fahrenheit;
    
-   printf("Introduce el numero de Grados Celsius: ");
+   printf("Enter the number of Celsius degrees: ");
 
-  // Adjudicamos el numero de Grados Celsius introducidos por el usuario a la variable GradosCelsius
-   scanf("%f", &GradosCelsius);
+  // We assign the number of Celsius degrees entered by the user to the variable CelsiusDegrees
+   scanf("%f", &CelsiusDegrees);
    
-
- //Convertimos el valor de los Grados Celsius introducidos por el usuario a la unidad Fahrenheit
-   Fahrenheit = GradosCelsius * 9.0 / 5.0  + 32.0;
+  // We convert the value of Celsius degrees entered by the user into Fahrenheit
+   Fahrenheit = CelsiusDegrees * 9.0 / 5.0 + 32.0;
    
-   printf("El numero de Grados Celsius introducidos es equivalente a: %.2f Fahrenheit", Fahrenheit);
-    return 0;
+   printf("The number of Celsius degrees entered is equivalent to: %.2f Fahrenheit", Fahrenheit);
+   
+   return 0;
 }
