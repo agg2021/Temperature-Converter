@@ -15,7 +15,7 @@ int main()
   // We convert the value of Celsius degrees entered by the user into Fahrenheit
    Fahrenheit = CelsiusDegrees * 9.0 / 5.0 + 32.0;
    
-   printf("The number of Celsius degrees entered is equivalent to: %.2f Fahrenheit", Fahrenheit);
+   printf("The number of Celsius degrees entered is equivalent to: %.2f °F", Fahrenheit);
    
    return 0;
 }
