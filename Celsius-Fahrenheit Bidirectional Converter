@@ -1,0 +1,38 @@
+int main()
+{
+    // We create variables to store values for both Celsius and Fahrenheit units as floats
+    float CelsiusDegrees, Fahrenheit, i;
+    
+    printf("Do you want to convert degrees Celsius to Fahrenheit (input 0) or Farenheit to degrees Celsius (input 1)?: ");
+    scanf("%f", &i);
+    
+    if (i == 0) { ;
+   
+   printf("Enter the number of Celsius degrees: ");
+
+  // We assign the number of Celsius degrees entered by the user to the variable CelsiusDegrees
+   scanf("%f", &CelsiusDegrees);
+   
+  // We convert the value of Celsius degrees entered by the user into Fahrenheit
+   Fahrenheit = CelsiusDegrees * 9.0 / 5.0 + 32.0;
+   
+   printf("The number of Celsius degrees entered is equivalent to: %.2f °F", Fahrenheit);
+   
+   } else if (i == 1) {;
+   
+   printf("Introduce the number of degrees Fahrenheit: ");
+
+  //We store the user's answer in the variable for Farenheit we made
+   scanf("%f", &Fahrenheit);
+   
+
+   //We convert the value of Farenheit into degrees Celsius
+   CelsiusDegrees = (Fahrenheit - 32.0) * 5.0 / 9.0;
+   
+   printf("The num of Farenheit introduced is equivalent to: %.2f °C", CelsiusDegrees);
+   } else {
+       printf("Input a correct value next time (0 or 1)");
+   }
+
+    return 0;
+}
