@@ -4,12 +4,12 @@
 int main()
 {
 
-   //We create the variables that both store the amount of degrees Farenheit and Celsius as floats
+   //We create the variables that both store the amount of degrees Fahrenheit and Celsius as floats
    float Fahrenheit, DegreesCelsius;
    
-   printf("Introduce el numero de Fahrenheit: ");
+   printf("Introduce the number of degrees Fahrenheit: ");
 
-  //We store the user's answer in the variable for Farenheit we made
+  //We store the user's answer in the variable for Fahrenheit we made
    scanf("%f", &Fahrenheit);
    
 
