@@ -1,10 +1,16 @@
+#include <stdio.h>
 int main()
 {
     // We create variables to store values for both Celsius and Fahrenheit units as floats
-    float CelsiusDegrees, Fahrenheit, i;
+    float CelsiusDegrees, Fahrenheit;
+    int i;
     
+    do{
     printf("Do you want to convert degrees Celsius to Fahrenheit (input 0) or Farenheit to degrees Celsius (input 1)?: ");
-    scanf("%f", &i);
+    scanf("%d", &i, "\n");
+    // Unless the user introduces one of the expected numerical values, the while loop will not end
+    // Note to user, this program is unable to work around values that are not numbers, I apologise, in the future, when I have the knowledge, I'll update the code to patch this error
+    } while(i != 0 && i!= 1);
     
     if (i == 0) { ;
    
