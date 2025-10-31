@@ -17,7 +17,7 @@ int main()
    printf("Enter the number of Celsius degrees: ");
 
   // We assign the number of Celsius degrees entered by the user to the variable CelsiusDegrees
-   scanf("%f", &CelsiusDegrees);
+   scanf("%f", &CelsiusDegrees, "\n");
    
   // We convert the value of Celsius degrees entered by the user into Fahrenheit
    Fahrenheit = CelsiusDegrees * 9.0 / 5.0 + 32.0;
